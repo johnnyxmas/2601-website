@@ -1,5 +1,6 @@
 <script>
   import MinerStatus from './lib/MinerStatus.svelte';
+  import MatrixBackground from './lib/MatrixBackground.svelte';
   
   // Snax stats data
   const snaxStats = [
@@ -11,9 +12,13 @@
   let hours = 0;
 </script>
 
+<MatrixBackground />
+
+<div class="overlay" />
+
 <main>
-  <h1>2601: THE SNACKER QUARTERLY</h1>
-  <h2>Snack the planet!!!</h2>
+  <h1>2601: THE SNACKER QUARTERLY</h1><br>
+  <h2>Snack the Planet!!!</h2>
 
   <div class="cyber-card">
     <h3>JOIN OUR SNACK-FUELED HACKER DISCORD</h3>
@@ -48,11 +53,27 @@
 
 <style>
   :global(body) {
-    background-color: #0a0a12;
     color: #00ff9d;
     font-family: 'Courier New', monospace;
     margin: 0;
     padding: 2rem;
+    overflow-x: hidden;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  main {
+    position: relative;
+    z-index: 1;
   }
 
   h1 {
@@ -60,12 +81,24 @@
     text-shadow: 0 0 10px #ff00aa;
     font-size: 3rem;
     margin-bottom: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    display: inline-block;
   }
 
   h2 {
     color: #00f0ff;
     text-shadow: 0 0 5px #00f0ff;
     margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    display: inline-block;
+  }
+
+  .text-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    margin: 1rem 0;
   }
 
   .cyber-card {
@@ -73,6 +106,7 @@
     padding: 2rem;
     margin: 2rem 0;
     box-shadow: 0 0 15px #ff00aa80;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .cyber-button {
@@ -101,6 +135,7 @@
   .stat-item {
     border: 1px solid #00f0ff;
     padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .stat-value {
@@ -112,14 +147,16 @@
   .cyber-quote {
     font-style: italic;
     border-left: 3px solid #00f0ff;
-    padding-left: 1rem;
+    padding: 1.5rem;
     margin: 3rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .snax-of-month, .hacker-jokes, .snax-calculator {
     border: 1px dashed #ff00aa;
     padding: 1.5rem;
     margin: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .snax-name {
