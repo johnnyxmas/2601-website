@@ -34,10 +34,10 @@
 
 <MatrixBackground />
 
-<div class="overlay" />
+<div class="overlay"></div>
 
 <main>
-  <img src="/assets/banner.jpg" alt="Snack Banner" class="banner-image">
+  <img src="assets/banner.jpg" alt="Snack Banner" class="banner-image">
   <h1>Snack the Planet!!!</h1>
 
   <div class="cyber-card">
@@ -116,21 +116,6 @@
     display: inline-block;
   }
 
-  h2 {
-    color: #00f0ff;
-    text-shadow: 0 0 5px #00f0ff;
-    margin-top: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1rem;
-    display: inline-block;
-  }
-
-  .text-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1.5rem;
-    margin: 1rem 0;
-  }
-
   .cyber-card {
     border: 2px solid #ff00aa;
     padding: 2rem;
@@ -181,7 +166,7 @@
     background-color: rgba(0, 0, 0, 0.7);
   }
 
-  .snax-of-month, .hacker-jokes, .snax-calculator {
+  .snax-of-month {
     border: 1px dashed #ff00aa;
     padding: 1.5rem;
     margin: 2rem 0;
@@ -193,27 +178,5 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-  }
-
-  .joke {
-    margin: 1rem 0;
-    padding: 1rem;
-    background: #0a0a20;
-  }
-
-  .snax-calculator input {
-    background: #0a0a20;
-    border: 1px solid #00f0ff;
-    color: #00ff9d;
-    padding: 0.5rem;
-    margin: 1rem 0;
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .result {
-    color: #ff00aa;
-    font-size: 1.2rem;
-    margin: 1rem 0;
   }
 </style>

@@ -77,7 +77,7 @@
   }
 </script>
 
-<canvas bind:this={canvas} class="matrix-canvas" />
+<canvas bind:this={canvas} class="matrix-canvas"></canvas>
 
 <style>
   .matrix-canvas {
