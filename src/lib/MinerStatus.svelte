@@ -31,6 +31,7 @@
     font-family: monospace;
     padding: 5px;
     border-top: 1px solid #333;
+    z-index: 999;
   }
   
   .status-bar {

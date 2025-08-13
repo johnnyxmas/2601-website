@@ -80,6 +80,8 @@
     border: 3px solid #5a0d7a;
     box-shadow: 0 0 20px #9c27b0, 0 0 30px #9c27b0;
     border-radius: 5px;
+    position: relative;
+    z-index: 1000;
   }
 
   :global(body) {
