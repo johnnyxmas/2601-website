@@ -8,7 +8,7 @@ This is the website for Snacker Quarterly, built with Svelte and Vite.
 2. GitHub Actions will automatically build and deploy to GitHub Pages
 3. Configure GitHub Pages in your repository settings:
    - Source: Deploy from branch
-   - Branch: gh-pages
+   - Branch: main
    - Folder: / (root)
 4. Set up your custom domain (Omgsnax.com) in the GitHub Pages settings
    - Add the CNAME file in your repository

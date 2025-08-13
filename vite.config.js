@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [svelte()],
   base: '',
   build: {
-    outDir: 'docs'
+    outDir: 'dist'
   }
 })
