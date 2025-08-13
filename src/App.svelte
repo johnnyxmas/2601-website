@@ -17,8 +17,8 @@
 <div class="overlay" />
 
 <main>
-  <h1>2601: THE SNACKER QUARTERLY</h1><br>
-  <h2>Snack the Planet!!!</h2>
+  <img src="/dist/assets/banner.jpg" alt="Snack Banner" class="banner-image">
+  <h1>Snack the Planet!!!</h1>
 
   <div class="cyber-card">
     <h3>JOIN OUR SNACK-FUELED HACKER DISCORD</h3>
@@ -52,6 +52,16 @@
 <MinerStatus />
 
 <style>
+  .banner-image {
+    width: 75%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    display: block;
+    border: 3px solid #5a0d7a;
+    box-shadow: 0 0 20px #9c27b0, 0 0 30px #9c27b0;
+    border-radius: 5px;
+  }
+
   :global(body) {
     color: #00ff9d;
     font-family: 'Courier New', monospace;
