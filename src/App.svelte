@@ -146,7 +146,6 @@
 
   .cyber-quote {
     font-style: italic;
-    border-left: 3px solid #00f0ff;
     padding: 1.5rem;
     margin: 3rem 0;
     background-color: rgba(0, 0, 0, 0.7);
