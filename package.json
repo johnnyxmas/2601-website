@@ -10,8 +10,13 @@
     "deploy": "npm run build && git add docs && git commit -m 'Build for GitHub Pages' && git push"
   },
   "devDependencies": {
+    "@rollup/rollup-darwin-x64": "^4.46.2",
+    "@sveltejs/kit": "^2.29.1",
     "@sveltejs/vite-plugin-svelte": "^6.1.1",
+    "@tsconfig/svelte": "^5.0.4",
     "svelte": "^5.38.1",
+    "svelte2tsx": "^0.7.42",
+    "typescript": "^5.9.2",
     "vite": "^7.1.2"
   }
 }
