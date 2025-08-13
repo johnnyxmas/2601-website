@@ -8,14 +8,14 @@
   <meta property="og:url" content="https://2601.snax/">
   <meta property="og:title" content="2601 - Snack-Fueled Hacker Collective">
   <meta property="og:description" content="Join snack-fueled hackers in our mission to snack the planet">
-  <meta property="og:image" content="/dist/assets/banner.jpg">
+  <meta property="og:image" content="/assets/banner.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://2601.snax/">
   <meta property="twitter:title" content="2601 - Snack-Fueled Hacker Collective">
   <meta property="twitter:description" content="Join snack-fueled hackers in our mission to snack the planet">
-  <meta property="twitter:image" content="/dist/assets/banner.jpg">
+  <meta property="twitter:image" content="/assets/banner.jpg">
 </svelte:head>
 
 <script>
@@ -37,7 +37,7 @@
 <div class="overlay" />
 
 <main>
-  <img src="/dist/assets/banner.jpg" alt="Snack Banner" class="banner-image">
+  <img src="/assets/banner.jpg" alt="Snack Banner" class="banner-image">
   <h1>Snack the Planet!!!</h1>
 
   <div class="cyber-card">
