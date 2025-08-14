@@ -73,23 +73,37 @@
 
 <style>
   .banner-image {
-    width: 75%;
+    width: 90%;
     max-width: 600px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1rem;
     display: block;
     border: 3px solid #5a0d7a;
     box-shadow: 0 0 20px #9c27b0, 0 0 30px #9c27b0;
     border-radius: 5px;
     position: relative;
     z-index: 1000;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .banner-image {
+      width: 95%;
+      margin-bottom: 0.5rem;
+    }
   }
 
   :global(body) {
     color: #00ff9d;
     font-family: 'Courier New', monospace;
     margin: 0;
-    padding: 2rem;
+    padding: 1rem;
     overflow-x: hidden;
+  }
+
+  @media (max-width: 768px) {
+    :global(body) {
+      padding: 0.5rem;
+    }
   }
 
   .overlay {
@@ -111,19 +125,29 @@
   h1 {
     color: #ff00aa;
     text-shadow: 0 0 10px #ff00aa;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 8vw, 3rem);
     margin-bottom: 0.5rem;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 1rem;
     display: inline-block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .cyber-card {
     border: 2px solid #ff00aa;
-    padding: 2rem;
-    margin: 2rem 0;
+    padding: 1.5rem;
+    margin: 1rem 0;
     box-shadow: 0 0 15px #ff00aa80;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  @media (max-width: 768px) {
+    .cyber-card {
+      padding: 1rem;
+      margin: 0.5rem 0;
+    }
   }
 
   .cyber-button {
@@ -135,6 +159,18 @@
     font-weight: bold;
     margin-top: 1rem;
     transition: all 0.3s;
+    min-width: 44px;
+    min-height: 44px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .cyber-button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      display: block;
+      margin: 1rem auto;
+    }
   }
 
   .cyber-button:hover {
@@ -145,8 +181,16 @@
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin: 3rem 0;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
   }
 
   .stat-item {
@@ -163,16 +207,31 @@
 
   .cyber-quote {
     font-style: italic;
-    padding: 1.5rem;
-    margin: 3rem 0;
+    padding: 1rem;
+    margin: 2rem 0;
     background-color: rgba(0, 0, 0, 0.7);
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+  }
+
+  @media (max-width: 768px) {
+    .cyber-quote {
+      margin: 1rem 0;
+      padding: 0.8rem;
+    }
   }
 
   .snax-of-month {
     border: 1px dashed #ff00aa;
-    padding: 1.5rem;
-    margin: 2rem 0;
+    padding: 1rem;
+    margin: 1.5rem 0;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  @media (max-width: 768px) {
+    .snax-of-month {
+      padding: 0.8rem;
+      margin: 1rem 0;
+    }
   }
 
   .snax-name {
