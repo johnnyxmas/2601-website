@@ -5,17 +5,17 @@
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://2601.snax/">
+  <meta property="og:url" content="https://omgsnax.com/">
   <meta property="og:title" content="2601 - Snack-Fueled Hacker Collective">
   <meta property="og:description" content="Join snack-fueled hackers in our mission to snack the planet">
-  <meta property="og:image" content="/assets/banner.jpg">
+  <meta property="og:image" content="https://omgsnax.com/assets/banner.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://2601.snax/">
+  <meta property="twitter:url" content="https://omgsnax.com/">
   <meta property="twitter:title" content="2601 - Snack-Fueled Hacker Collective">
   <meta property="twitter:description" content="Join snack-fueled hackers in our mission to snack the planet">
-  <meta property="twitter:image" content="/assets/banner.jpg">
+  <meta property="twitter:image" content="https://omgsnax.com/assets/banner.jpg">
 </svelte:head>
 
 <script>
