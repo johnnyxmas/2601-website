@@ -9,6 +9,9 @@
     "preview": "vite preview",
     "deploy": "npm run build && git add dist && git commit -m 'Build for GitHub Pages' && git push"
   },
+  "overrides": {
+    "cookie": "^0.7.2"
+  },
   "devDependencies": {
     "rollup": "^4.46.2",
     "@sveltejs/kit": "^2.29.1",
